@@ -1,0 +1,50 @@
+<html>
+<head>
+<style>
+.button{
+background-color : grey;
+border : none;
+color :white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+h2 
+{
+color :marron;
+text-align: center;
+text-decoration: underline;
+}
+p
+{
+color:navy;
+font-family:"lucida console",
+"courier new",monospace;
+font-size:25px;
+}
+</style>
+</head>
+<body>
+<center>
+<br>
+<br>
+<label>enter any color:
+<input id="color" type="text"></label><br><br>
+<button class="button"
+onlick="changebg()">set color</button>
+<h2>javascript</h2>
+<p>java simple powerfull safe</p>
+<script>
+function changebgb()
+{
+var color=document.ElementById("color").value;
+document.bgColor=color;
+}
+</script>
+</center>
+</body>
+</html>

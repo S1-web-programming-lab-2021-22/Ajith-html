@@ -1,0 +1,46 @@
+<html>
+<head><title></title>
+<style>
+h2{
+color:green;
+font-weight :bold;
+text-decoration : underline;
+}
+</style>
+</head>
+<body>
+<center>
+<h2>check if amstrong or not</h2>
+<br><br>
+<label>enter any number:
+<input type="text" id="num"></label>
+<button
+onclick="amstrong()">check</button>
+<p id="a"></p>
+<script>
+function amstrong()
+{
+var n=document.getElementById("num").value;
+var e,xz,arm=0;
+x=parseInt(n);
+while(x>0)
+{
+e=x%10;
+x=parseInt(x/10);
+arm=arm+(e*e*e);
+}
+if(parseInt(n)==arm)
+{
+document.getElementById("a").innerHTML =n + "is an amstrong number ";
+}
+else
+{
+document.getElementById("a").innerHTML =n+ "is an amstrong not number"
+}
+}
+</script>
+</body>
+</html>
+ 
+</head>
+

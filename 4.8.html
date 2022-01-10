@@ -1,0 +1,39 @@
+<html>
+<head>
+<style>
+h2{
+font-size: 30px;
+color:green;
+font-weight: bold;
+text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<center>
+<h2>calculatr multiplication and division of 2 numbers</h2>
+<br>
+<br>
+<label>enter the first number:<input type="text" id="num1"></label>
+<br>
+<br>
+<label>enter the second number:<input type="text" id="num2"></label>
+<br>
+<br>
+<button onClick="multiply()">multiply</button>
+<button onClick="divide()">divide</button>
+<p id="p"></p>
+<script>
+function multiply(){
+var a=document.getElementById("num1").value;
+var b=document.getElementById("num2").value;
+x= parseFloat(a)
+y= parseFloat(b)
+var d=x/y;
+document.getElementById("p").innerHTML= d;
+}
+</script>
+</center>
+</body>
+</html>
+
